@@ -11,3 +11,7 @@ __pycache__
 *.pyc
 __pycache__/
 mysite/db.sqlite
+mysite/media/images/
+mysite/media/original_images/
+mysite/db.sqlite
+mysite/db.sqlite3
