@@ -1,1 +1,7 @@
 .venv3/
+__pycache__/
+__pycache__
+*/__pycache__/
+**/__pycache__/
+db.sqlite3
+mysite/db.sqllite3
