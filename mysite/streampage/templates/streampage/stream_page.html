@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-streampage{% endblock %}
+{% block content %}
+
+<h1>Author: {{ page.author }}</h1>
+<h1>Date: {{ page.date}}</h1>
+
+{% include_block page.body %}
+
+
+<!-- <h1>trying blocks</h1>
+     <article>
+     {% for block in page.body %}
+     <section>{% include_block block %}</section>
+     {% endfor %}
+     </article> -->
+
+
+{% endblock %}
