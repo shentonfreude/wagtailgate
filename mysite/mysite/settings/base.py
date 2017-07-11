@@ -31,6 +31,9 @@ INSTALLED_APPS = [
     'blog',
     'streampage',
 
+    'bakery',
+    'wagtailbakery',
+
     'wagtail.wagtailforms',
     'wagtail.wagtailredirects',
     'wagtail.wagtailembeds',
@@ -142,3 +145,11 @@ WAGTAIL_SITE_NAME = "mysite"
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
+
+# Wagtail bakery:
+
+BAKERY_MULTISITE = False
+BUILD_DIR = '/tmp/wagtail-build/'
+BAKERY_VIEWS = (
+    'wagtailbakery.views.AllPublishedPagesView',
+)
